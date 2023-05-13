@@ -256,6 +256,7 @@ img {
   background-color: var(--accent-pressed-state);
   color: var(--primary-color);
 }
+
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -657,10 +658,66 @@ img {
   transition: fill var(--transition);
 }
 
-/* .modal-close-btn-icon:hover,
-.modal-close-btn-icon:focus {
-  fill: var(--primary-color);
-} */
+/* ...........................Footer Subscribe.................... */
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-color);
+  margin: 0 0 16px 0;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 16px;
+  gap: 24px;
+}
+
+.subscribe-form-input {
+  min-width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  color: var(--primary-color);
+  background-color: var(--color-main-text);
+
+  border: 1px solid var(--primary-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+  padding: 8px 24px;
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: var(--primary-color);
+  background: var(--accent);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color var(--transition);
+}
+
+.subscribe-form-submit:hover,
+.subscribe-form-submit:focus {
+  background-color: var(--accent-pressed-state);
+}
+
 /* .....................................modal form...................... */
 
 .modal-form {
@@ -748,9 +805,8 @@ img {
 .modal-form-input-icon {
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
   left: 16px;
+  transform: translateY(-50%);
   display: block;
   width: 18px;
   height: 24px;
@@ -796,4 +852,28 @@ img {
   background-position: center;
   border: 1px solid var(--accent-pressed-state);
   border-radius: 2px;
+}
+
+.modal-form-submit {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  min-width: 169px;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--transition);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--accent-pressed-state);
 }
