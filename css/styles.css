@@ -51,16 +51,15 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* ............................Logotype................... */
@@ -845,14 +844,14 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.modal-form-check:focus + .modal-form-check-desc::before {
+/* .modal-form-check:focus + .modal-form-check-desc::before {
   background-color: var(--accent-pressed-state);
   background-image: url(../images/click.png);
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid var(--accent-pressed-state);
   border-radius: 2px;
-}
+} */
 
 .modal-form-submit {
   font-family: inherit;
